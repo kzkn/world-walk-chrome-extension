@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "World Walk for Chrome",
+  "description": "Post walking comment on logout",
+  "content_scripts": [
+    {
+      "js": [ "content.js" ],
+      "matches": [ "https://www.sonicgarden.world/" ]
+    }
+  ]
+}
