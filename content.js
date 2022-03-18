@@ -19,7 +19,7 @@ function fetchOptions() {
 function postComment(content) {
   // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts#xhr_and_fetch
   // In Firefox, extensions that need to perform requests that behave as if they were sent by the content itself can use  content.XMLHttpRequest and content.fetch() instead.
-  const fetch = (window.content && window.content.fetch) ? content.fetch : window.fetch;
+  const fetch = (window.content && window.content.fetch) ? content.fetch : window.fetch
 
   return fetch(postCommentUrl(), {
     'method': 'POST',
@@ -33,11 +33,11 @@ function sample(array) {
 }
 
 const MESSAGES = {
-  3: ['めっちゃ歩いてきまーす', '歩きまくってくる', 'たくさん歩くザンス'],
+  3: ['めっちゃ歩いてきまーす', '歩きまくってくる', 'めちゃ歩いてくる！'],
   2: ['歩いてきます〜', '歩くぞ', '歩く！'],
 }
 
-const TITLES = ['歩きに行きますかー。', 'どれぐらい歩きます？', '今日どれぐらい歩きました？これからどうします？']
+const TITLES = ['歩きに行きますかー。', '歩こうぜ！', 'どれぐらい歩きます？', '今日どれぐらい歩きました？これからどうします？']
 
 const MODAL_HTML = `
   <div class="js-world-walk-modal">
